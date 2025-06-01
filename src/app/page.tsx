@@ -31,6 +31,7 @@ export default function Home() {
         setOutput("Bruh, AI didn’t respond well. Try again.");
       }
     } catch (error) {
+      console.error("Fetch error:", error);
       setOutput("Connection error. Is your WiFi ghosting you?");
     }
   };
